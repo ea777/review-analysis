@@ -4,8 +4,6 @@
 import pandas as pd
 from sentiment import analyse_comments
 
-
-
 # making data frame from csv file
 data = pd.read_excel(r"C:\Users\eyob\PycharmProjects\bunsen_reviews.xlsx")
 
@@ -19,6 +17,7 @@ print(type(rows))
 print(rows)
 
 analyse_comments(rows)
+print("")
 
 
 
