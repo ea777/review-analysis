@@ -5,19 +5,13 @@ import pandas as pd
 from sentiment import analyse_comments
 
 # making data frame from csv file
-data = pd.read_excel(r"C:\Users\eyob\PycharmProjects\bunsen_reviews.xlsx")
+data = pd.read_excel("./bunsen_reviews.xlsx")
 
-# retrieving rows by iloc method
+# retrieving just the comments.
 rows = data.iloc[0:170, 1]
 
-# checking data type of rows
-print(type(rows))
-
-# display
-print(rows)
-
 analyse_comments(rows)
-print("")
+# print("reviews.py")
 
 
 
